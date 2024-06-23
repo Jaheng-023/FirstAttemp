@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face {
+    font-family: Manrope;
+    src: url(fonts/Manrope-SemiBold.otf);
+}
+
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 1525px;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+.img1 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 1000px;
+}
+
+header {
+    height: 50px;
+
+}
+
+.img2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 650px;
+    left: 60px;
+    
+}
+
+.p1 {
+    color: #000;
+    position: absolute;
+    top: 180px;
+    left: 310px;
+    font-family: Manrope;
+    font-size: small;
+    font-weight: 700;
+}
+
+.p2 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 60px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.p3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 60px;
+    position: absolute;
+    top: 260px;
+    left: 300px;
+}
+
+.b1 {
+    position: absolute;
+    top: 430px;
+    left: 300px;
+    background-color: #000;
+    border: 0;
+    color: #ffa500;
+    font-size: 10px;
+    font-family: Manrope;
+    padding: 8px;
+    width: 100px;
+}
+
+.b1:hover {
+    background-color: #000000d3;
+}
+
+.b2 {
+    position: absolute;
+    left: px;
+    font-family: Manrope;
+    background-color:#000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.b2:hover {
+    background-color: #ffffff26;
+}
+
+.b3 {
+    position: absolute;
+    left: 680px;
+    background-color:#000;
+    color: #fff;
+    border: none;
+    font-family: Manrope;
+    cursor: pointer;
+}
+
+.b3:hover {
+    background-color: #ffffff26;
+}
+
+.b4 {
+    position: absolute;
+    left: 756px;
+    background-color:#000;
+    color: #fff;
+    border: none;
+    font-family: Manrope;
+    cursor: pointer;
+}
+
+.b4:hover {
+    background-color: #ffffff26;
+}
+
+.b5 {
+    position: absolute;
+    left: 836px;
+    background-color:#000;
+    color: #fff;
+    border: none;
+    font-family: Manrope;
+    cursor: pointer;
+}
+
+.b5:hover {
+    background-color: #ffffff26;
+}
+
+.b6 {
+    position: absolute;
+    left: 520px;
+    background-color:#000;
+    color: #fff;
+    border: none;
+    font-family: Manrope;
+    cursor: pointer;
+}
+
+.b6:hover {
+    background-color: #ffffff26;
+}
+
+header input {
+    position: absolute;
+    left: 1300px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    width: 150px;
+    height: 20px;
+}
+
+i {
+    color: #000;
+    position: absolute;
+    left: 1310px;
+    bottom: 700px;
+}

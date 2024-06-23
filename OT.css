@@ -1,0 +1,157 @@
+
+
+@font-face {
+    font-family: Modern;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Otaku;
+    src: url(fonts/GlacialIndifference-Bold.otf);
+}
+
+body {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-resolution: 400dpi;
+    background-attachment: fixed;
+
+}
+
+.name {
+    position: absolute;
+    left: 1282px;
+    top: 20px;
+    font-size: larger;
+    font-family: Otaku;
+}
+
+.line {
+    position: absolute;
+    left: 1272px;
+    top: 15px;
+    font-weight: 1000;
+    font-size: x-large;
+    color: #ffa500;
+}
+
+.name2 {
+    position: absolute;
+    left: 1273px;
+    top: 53px;
+    font-family: Otaku;
+    font-size: larger;
+}
+
+
+.Container {
+  position: absolute;
+  left: 900px;
+  top: 100px;   
+}
+
+
+
+h1 {
+    color: #fff;
+    font-family:sans-serif;
+    margin-bottom: 5px;
+    font-weight: 1000;
+}
+
+p {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: initial;
+    margin-bottom: 40px;
+}
+
+
+input {
+    width: 400px;
+    height: 50px;
+   
+    border-color: #ffa500;
+    background-color:#000;
+    text-align: center;
+    font-size: medium;
+    color: #fff;
+}
+
+ 
+    
+.b5 {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family:sans-serif;
+    font-size:large;
+    background-color: #ffa500;
+}
+
+.b5:hover {
+    background-color: #ffa600af;
+}
+   
+
+.b6 {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #ffa500;
+    font-family: sans-serif;
+    position: absolute;
+    left: 280px;
+    top: 370px;
+}
+
+.b7 {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #ffa500;
+    font-family: sans-serif;
+    position: absolute;
+    left: 280px;
+    top: 390px;
+
+   
+}
+
+
+.P1 {
+    font-family: Otaku;
+    color: #fff;
+}
+
+
+.fb img {
+    width: 55px;
+    position: absolute;
+    top: 445px;
+    right: 250px;
+    left: 100px; ;
+}
+
+.ggl img {
+    width: 70px;
+    position: absolute;
+    top: 439px;
+    left: 160px; ;
+
+}
+
+.twt img {
+    width: 50px;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+}
+
+
+
+
+

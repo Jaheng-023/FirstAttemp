@@ -1,0 +1,36 @@
+.box1 { 
+    padding: 10px;
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 { 
+    height: 450px;
+    width: 450px;
+    margin: 0;
+    border: none;
+    overflow: auto;
+    
+}
+
+.box3 { 
+    height: 450px;
+    width: 450px;
+    margin: 0;
+    border: none;
+    background-image: url('gwenny.jpg');
+    background-size: 80% 80%; 
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    font-size: 40px;
+}

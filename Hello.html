@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        .content {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .hover-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        .hover-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="hover-button" data-content="content1">Accouting Department</button>
+        <button class="hover-button" data-content="content2">SCM Department</button>
+        <button class="hover-button" data-content="content3">Marketing Department</button>
+    </div>
+    
+    <div class="content" id="content1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis iusto placeat eaque deserunt, veniam molestias rerum obcaecati reprehenderit voluptatibus vero illum autem enim quo nulla porro! Consequuntur, quia.</p>
+    </div>
+    
+    <div class="content" id="content2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis? Quae quia libero dolore quaerat temporibus, unde magnam quasi dignissimos itaque! Fuga quis sed soluta facilis. Commodi qui esse dolore.</p>
+    </div>
+    
+    <div class="content" id="content3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ducimus excepturi quam reiciendis facere eligendi amet minus in minima quis dolores labore eius omnis quo harum quia, voluptatum placeat asperiores?This is content for Button 3.</p>
+    </div>
+    
+    <script>
+        const buttons = document.querySelectorAll('.hover-button');
+        const contents = document.querySelectorAll('.content');
+        
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                const contentId = button.getAttribute('data-content');
+                const content = document.getElementById(contentId);
+                if (content) {
+                    // Hide all contents first
+                    contents.forEach(c => {
+                        c.style.display = 'none';
+                    });
+                    // Show the corresponding content
+                    content.style.display = 'block';
+                }
+            });
+            
+            button.addEventListener('mouseout', () => {
+                contents.forEach(c => {
+                    c.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+    
