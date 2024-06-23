@@ -8,44 +8,53 @@ body {
 .navbar { 
     text-decoration: none;
     background-color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     width: 100%;
     top: 0;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navdiv {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .logo {
-    margin-right: 500px;
+    margin-right: 20px;
+    flex-grow: 1;
 }
 
 .options {
-    margin-right: 650px;
+    margin-right: 20px;
+    flex-grow: 2;
+    text-align: center;
 }
 
-.logo a{
-    text-decoration:  none;
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
+.options ul {
+    padding: 0;
 }
 
 .options ul li{
     list-style: none;
     display: inline-block;
-    
 }
 
 .options li a{
     text-decoration:  none;
     color: white;
-    font-size: 25px;
-    margin-left: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.buttonLogin {
+    flex-grow: 1;
+    text-align: right;
 }
 
 .buttonLogin a {
@@ -66,19 +75,55 @@ body {
 }
 
 .container1 {
-    padding: 100px;
+    padding: 20px;
     position: relative;
 }
 
 .container1 p {
-    font-size: 30px;
+    font-size: 18px;
     text-align: justify;
     color: white;
 }
 
 .container1 h1{
-    font-size: 50px;
+    font-size: 24px;
     text-align: center;
     color: white;
 }
 
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo, .options, .buttonLogin {
+        margin-right: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .options ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .buttonLogin {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container1 {
+        padding: 10px;
+    }
+
+    .container1 p {
+        font-size: 16px;
+    }
+
+    .container1 h1 {
+        font-size: 22px;
+    }
+}
